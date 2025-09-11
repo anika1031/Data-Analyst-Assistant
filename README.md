@@ -20,3 +20,8 @@ Report: Generates a clean, readable Markdown report with findings and visualizat
 - The agent's internal "reasoning engine" decides the sequence of tool usage. For example: [load_csv] -> [find_top_regions] -> [generate_report].
 
 - The final report is presented to the user.
+
+## Documentation
+
+For detailed user-system interaction and agent roles, see:  
+➡ [Interaction Guide](docs/Interaction.md)
