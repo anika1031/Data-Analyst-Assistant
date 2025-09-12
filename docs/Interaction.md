@@ -99,3 +99,15 @@ Generate a **human-readable report** from the analysis.
 
 ---
 
+## Workflow Overview  
+
+```mermaid
+flowchart LR
+    User([Upload CSV and Ask Question]) --> Planner[Planner Agent]
+    Planner --> Loader[CSV Loader Agent]
+    Loader --> Planner
+    Planner --> Analyzer[Data Analysis Agent]
+    Analyzer --> Planner
+    Planner --> Reporter[Report Generation Agent]
+    Reporter --> Planner
+    Planner --> Output["Final Markdown Report and Visualizations"]
