@@ -103,7 +103,7 @@ Generate a **human-readable report** from the analysis.
 
 ```mermaid
 flowchart LR
-    User([Upload CSV and Ask Question]) --> Planner[Planner Agent]
+    User([User Uploads a CSV and Asks Questions]) --> Planner[Planner Agent]
     Planner --> Loader[CSV Loader Agent]
     Loader --> Planner
     Planner --> Analyzer[Data Analysis Agent]
